@@ -1,0 +1,170 @@
+/* -------- Fonts -------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,700;1,700&display=swap");
+
+/* -------- Fonts -------- */
+
+/* -------- Colors -------- */
+
+:root {
+  /* Primary */
+  --teal-500: hsl(179, 62%, 43%);
+  --teal-400: hsl(179, 47%, 52%);
+  --green-400: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --teal-100: hsl(204, 43%, 93%);
+  --gray-500: hsl(218, 22%, 67%);
+}
+
+/* -------- Colors -------- */
+
+/* -------- General -------- */
+
+body {
+  background-color: var(--teal-100);
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: Karla;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  min-height: 100%;
+}
+
+/* -------- General -------- */
+
+/* -------- Components -------- */
+
+.h3-title {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+/* -------- Components -------- */
+
+/* -------- Component -------- */
+
+.component {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.7rem;
+  background-color: #fff;
+  max-width: 63.5rem;
+  overflow: hidden;
+}
+
+.component-header {
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.component-header__title {
+  margin-bottom: 3rem;
+  color: var(--teal-500);
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.component-header__info {
+  margin-bottom: 1.2rem;
+  color: var(--green-400);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.component-header__description {
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.component__footer {
+  display: flex;
+}
+
+/* .component__subscription {
+} */
+
+.component-subscription {
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  background-color: var(--teal-500);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+/* .component-subscription__title {
+} */
+
+.component-subscription__price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 3.2rem;
+}
+
+.component-subscription__price > span {
+  opacity: 0.4;
+  font-size: 1.4rem;
+}
+
+.component-subscription__info {
+  opacity: 0.7;
+  margin-bottom: 3.1rem;
+}
+
+.component-subscription__button {
+  transition: 0.3s ease-in-out opacity;
+  margin-top: auto;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  background-color: var(--green-400);
+  padding: 1.5rem 0;
+  width: 100%;
+  color: inherit;
+  font-weight: 700;
+}
+
+.component-subscription__button:hover {
+  opacity: 0.8;
+}
+
+/* .component__why-us {
+} */
+
+.component-why-us {
+  background-color: var(--teal-400);
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+/* .component-why-us__title {
+} */
+
+.component-why-us__info {
+  opacity: 0.6;
+  max-width: 75%;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .component-why-us__info {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 540px) {
+  .component__footer {
+    flex-direction: column;
+  }
+
+  .component-why-us__info {
+    max-width: 75%;
+  }
+}
+
+/* -------- Component -------- */
